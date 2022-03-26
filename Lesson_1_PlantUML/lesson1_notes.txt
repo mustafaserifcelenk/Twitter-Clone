@@ -1,0 +1,16 @@
+! Composition
+
+Bir sınıfın birden fazla bağlı olduğu sınıf veya bir sınıf varsa ve bu sınıf bağlı olduğu diğer sınıflar olmadan var olmaya devam edebiliyor ancak bağlı olduğu sınıf, bu sınıf olmadan var olamıyorsa bu sınıfların aralarındaki bu ilişkiye, composite ilişki denir. Bu sınıfların aynı domainde(*) modellenmesi beklenir çünkü ilişkileri kuvvetlidir, bir couple sıfatlandırması yapılabilir. Ancak başlangıçta composition ilişkisine sahip sınıflar uygulamanın büyümesiyle birlikte farklı domainlere bölünebilir ve aralarındaki bu composition ilişkisi bu durumda da devam edebilir. 
+
+(*) Domain farklı işlevlerin farklı veri bağımlık alanları anlamında kullanılır. Mesela bir e-ticaret sitesinde satın alma farklı bir domain alanıyken, üye olma, reklam gibi businesslar, işlevler farklı domain alanlarıdır.
+
+Genelde domainleri çok fazla couple etmek istemeyiz. Bir domainin her operasyonu bir başka domainide etkiliyorsa, onlar iki farklı domain değildir.
+
+! Aggregation 
+
+Bir classın kendi lifecycle'ı olmakla birlikte başka bir sınıf bu sınıfı kullanabiliyorsa, diğer sınıfın bu sınıf üzerinde bir aggreagation'ı var diyebiliriz. Mesela arabanın, lastiği üzerinde böyle bir ilişkisi vardır. Arabanın 4 tane lastiği olur ve araba bu lastiklerin hangi lastikler olduğunu bilir ve dolayısıyla genelde lastikler array olur.
+
+! Association
+
+Bir sınıfın bir üyesi başka bir sınıfı bazı durumlarda kullanıyorsa. Mesela bir ürün indirimde de olabilir, olmaya da bilir. İndirim olduğu zaman ürünün fiyat hesaplama fonksiyonu indirim sınıfını kullanır.
+

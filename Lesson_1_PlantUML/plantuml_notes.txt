@@ -1,0 +1,13 @@
+User --> X : User, X classını miras alıyor.
+User -up-|> X : aynı anlamda sadece resimde konum değişikliği
+
+
++ : public, - : private, _var : var değişkeni private demek
+
+
+Entity: Id'leri var
+ValueObject: Id'leri yok
+
+
+name: String - String / string name : string tipinde bir değişken
+name(): String - String / string name() : string dönen method 

@@ -1,0 +1,35 @@
+@startuml "Twitter_Clone"
+
+class User <<Entity>> {
+    + string username
+    + email: String
+    + password_digest: String
+    + created_at: Date
+    + updated_at: Date
+    + remember_token: String
+    + slug: String
+    + tweet()
+    + sendMessage()
+    + sendFriendshipRequest()
+    + acceptFriendshipRequest()
+    + search()
+}
+
+class Relationship <<Entity>> {
+    + int follower_id
+    + int followed_id
+    + date created_at
+    + date updated_at
+}
+
+class Tweet <<Entity>> {
+    + string content
+    + int user_id
+    + date created_at
+    + date updated_at
+}
+
+User *--> Relationship
+User *--> Tweet
+
+@enduml

@@ -1,0 +1,7 @@
+Bir node js dosyası package.json dosyası içeriyorsa o bir js projesidir demek oluyor. Bunun içerisinde bağımlıklarımız olur. 
+
+Package.json :
+
+scripts : Projenin çalıştırılması noktasında kolaylık sağlayan kodlar. 'npm' yazdıktan sonra scriptin içindeki başlıklar yazılarak onlar çalıştırılıyor. Oraya mesela 'start' ekleyerek 'npm start' komutuyla index.js'i çalışır hale getirdik.
+
+nodemon'u --D olarak kurduk. Bu onun development ortamında projeye dahil edileceğini, normal uygulamanın çalıştırılması için gerek duyulmayacağını gösteriyor. npm i dediğiniz zaman projeye dahil olur ancak clone vs yaptığınızda projeye dahil edilmez. Aynı zamanda onu -g etiketiyle global olarak da kaydedebilirsiniz. Bu da projeye dahil edilmeyip locale dahil edilmesi anlamına geliyor.

@@ -5,3 +5,7 @@ Package.json :
 scripts : Projenin çalıştırılması noktasında kolaylık sağlayan kodlar. 'npm' yazdıktan sonra scriptin içindeki başlıklar yazılarak onlar çalıştırılıyor. Oraya mesela 'start' ekleyerek 'npm start' komutuyla index.js'i çalışır hale getirdik.
 
 nodemon'u --D olarak kurduk. Bu onun development ortamında projeye dahil edileceğini, normal uygulamanın çalıştırılması için gerek duyulmayacağını gösteriyor. npm i dediğiniz zaman projeye dahil olur ancak clone vs yaptığınızda projeye dahil edilmez. Aynı zamanda onu -g etiketiyle global olarak da kaydedebilirsiniz. Bu da projeye dahil edilmeyip locale dahil edilmesi anlamına geliyor.
+
+nodemon için package.json'a ignore json ek kıstası koyduk. Bunun sebebi nodemonun json dosyasındaki değişiklikleri değişiklik olarak algılayıp tekrar tekrar kendini run etmesini engellemek. Böylece index.js'teki değişiklikleri görebiliecek ama json dosyasındaki değişikliklere kör kalacak.
+
+Statik: Doğrudan sınıf içinde tanımlanan metot ve proplar anlamına gelir. Statik olmayanlar instancelar üzerinde kullanılabilir olurken, statik olanlar doğrudan sınıf.statikMetot olarak kullanılabilirler.

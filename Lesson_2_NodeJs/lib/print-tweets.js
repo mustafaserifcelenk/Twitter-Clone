@@ -1,0 +1,1 @@
+// index'te yaptığımız tweetleri yazdırma fonksiyonunu burada tanımlamalıyız, zira indexin tweetlerin nasıl yazdırıldığını bilmesine gerek yok

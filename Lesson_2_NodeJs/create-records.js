@@ -1,0 +1,1 @@
+// kayıtları yaratmak bu js'in işi

@@ -6,5 +6,5 @@ class UserDatabase extends BaseDatabase {
     return this.load().find((o) => o.username == name);
   }
 }
-
+ 
 module.exports = new UserDatabase(User);

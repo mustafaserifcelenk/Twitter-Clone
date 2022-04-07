@@ -7,9 +7,12 @@ class BaseDatabase {
     this.filename = model.name.toLowerCase();
   }
   save(object) {
-    fs.writeFileSync(
+    fs.writeFile(
       `./${this.filename}.json`,
-      flatted.stringify(object, null, 2)
+      flatted.stringify(object, null, 2),
+      () => {
+        console.log("wrote", this.filename);
+      }
     );
   }
 

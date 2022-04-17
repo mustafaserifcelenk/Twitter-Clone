@@ -1,0 +1,19 @@
+İnternette kontrolü elinde bulunduran süper bilgisayarlar aslen birer seviye seviye dns serverlar. Kullanıcıların dns serveri modemin dns serveri oluyor, modemin dns serverıda eğer özel bir ayarınız yoksa internet sağlayacınızın dns serveri oluyor.
+
+Dns Server
+
+Bir internet sitesine ulaşmak istediğinizde, yaptığınız istek ilk olarak dns sunucusuna gidiyor. Burada bilgisayarınızda bir dns sunucusu varsa oraya gidiyor ancak genelde bilgisayarınızda dns sunucusu olmaz. Bu yüzden 8.8.4.4(eskiden değiştirdiğimiz) gibi dns sunucularına gidiyor. 
+
+Kullanıcı -> Modem : Ben bilmem servis sağlayıcıya soralım -> Servis sağlayıcı biliyorsa IP adresi şu diye cevap verir -> Bu şekilde root dns serverlara kadar bulunana dek devam eder sorgu
+
+Port
+
+Default olarak web sunucularının sunulduğu port 80 ancak bu yeteri kadar güvenli değil. Bunun yeteri kadar güvenilir olması için https adında end-to-end encrypted bir protokol icat edilmiştir. Bu 443 portunda çalışır. Siz aslında google.com:80 yazdığınızda google sizi google.com:443'e redirect ediyor.
+
+Localhost: 
+
+Host gitsin local bilgisayarımın yazmış olduğum portuna bağlansın. Bu bağlantı için 127.0.0.1 'i kullanıyoruz. Bu özel bir IP adresi, dünyanın neresinde olunursa olunsun kendi bilgisayarını gösterir.
+
+Axios: 
+
+Önyüzden arka yüze istek yapmak için yazılım.

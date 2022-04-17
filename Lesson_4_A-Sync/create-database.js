@@ -162,3 +162,5 @@ main()
 
 
 // Dış dünyayla ilgili olan herşey dosya okuma, başka sunucuya istek, veritabanı isteği gibi asenkron okuma
+
+// Burada error handlingi try catch ile yapıyoruz.
